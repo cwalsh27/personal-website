@@ -13,7 +13,8 @@ module.exports = {
       colors: {
         forestGreen: '#2B4141',
         backgroundGrey: '#dbdfe6',
-        clayBlueGrey: '#cfe2f3ff'
+        clayBlueGrey: '#cfe2f3ff',
+        rust: '#af3800'
       },
     },
   },
