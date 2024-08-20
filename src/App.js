@@ -3,7 +3,7 @@ import Hero from './components/Hero';
 
 function App() {
   return (
-    <div className="App bg-zinc-50">
+    <div className="App bg-forestGreen">
       <Hero />
       <div className='h-screen'></div>
     </div>
