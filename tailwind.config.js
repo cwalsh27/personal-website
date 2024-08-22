@@ -14,7 +14,12 @@ module.exports = {
         forestGreen: '#2B4141',
         backgroundGrey: '#dbdfe6',
         clayBlueGrey: '#cfe2f3ff',
-        rust: '#af3800'
+        rust: '#af3800',
+        background: '#2b4141',
+        accentOne: '#a24936',
+        accentTwo: '#ffd29d',
+        titleColor: '#f0f9ff',
+        navbarColor: '#dbdfe6'
       },
     },
   },
