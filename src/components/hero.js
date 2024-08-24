@@ -7,7 +7,7 @@ import { IoLink } from "react-icons/io5";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 
-import Navbar from "./Navbar"
+import Navbar from "./navbar"
 
 
 function Hero() {
@@ -26,26 +26,31 @@ function Hero() {
     const subtitleXVis = useTransform(scrollYProgress, [0.0, 0.45, 0.46], ["visible", "visible", "hidden"]);
 
     // Contact Icon Animations
-    const iconAX = useTransform(scrollYProgress, [0.03, 0.15, 0.3], ["0vw", "0vw", "-3vw"])
-    const iconAY = useTransform(scrollYProgress, [0.03, 0.15, 0.3], ["0vh", "-20vh", "-30vh"])
-    const iconAVis = useTransform(scrollYProgress, [0.03, 0.3], ["visible", "hidden"])
+    const iconAX = useTransform(scrollYProgress, [0.03, 0.25, 0.3], ["0vw", "0vw", "-3.5vw"])
+    const iconAY = useTransform(scrollYProgress, [0.03, 0.3], ["0vh", "-30vh"])
+    const iconAVis = useTransform(scrollYProgress, [0.03, 0.29], ["visible", "hidden"])
 
-    const iconBX = useTransform(scrollYProgress, [0.05, 0.15, 0.32], ["0vw", "0vw", "-3vw"])
-    const iconBY = useTransform(scrollYProgress, [0.05, 0.15, 0.32], ["0vh", "-20vh", "-41vh"])
-    const iconBVis = useTransform(scrollYProgress, [0.05, 0.32], ["visible", "hidden"])
+    const iconBX = useTransform(scrollYProgress, [0.05, 0.27, 0.32], ["0vw", "0vw", "-3.5vw"])
+    const iconBY = useTransform(scrollYProgress, [0.05, 0.32], ["0vh", "-41vh"])
+    const iconBVis = useTransform(scrollYProgress, [0.05, 0.31], ["visible", "hidden"])
 
-    const iconCX = useTransform(scrollYProgress, [0.07, 0.15, 0.34], ["0vw", "0vw", "-3vw"])
-    const iconCY = useTransform(scrollYProgress, [0.07, 0.15, 0.34], ["0vh", "-20vh", "-52vh"])
-    const iconCVis = useTransform(scrollYProgress, [0.07, 0.34], ["visible", "hidden"])
+    const iconCX = useTransform(scrollYProgress, [0.07, 0.29, 0.34], ["0vw", "0vw", "-3.5vw"])
+    const iconCY = useTransform(scrollYProgress, [0.07, 0.34], ["0vh", "-52vh"])
+    const iconCVis = useTransform(scrollYProgress, [0.07, 0.33], ["visible", "hidden"])
 
-    const iconDX = useTransform(scrollYProgress, [0.09, 0.15, 0.36], ["0vw", "0vw", "-3vw"])
-    const iconDY = useTransform(scrollYProgress, [0.09, 0.15, 0.36], ["0vh", "-20vh", "-63vh"])
-    const iconDVis = useTransform(scrollYProgress, [0.09, 0.36], ["visible", "hidden"])
+    const iconDX = useTransform(scrollYProgress, [0.09, 0.31, 0.36], ["0vw", "0vw", "-3.5vw"])
+    const iconDY = useTransform(scrollYProgress, [0.09, 0.36], ["0vh", "-63vh"])
+    const iconDVis = useTransform(scrollYProgress, [0.09, 0.35], ["visible", "hidden"])
+
+    //Home Image Animation
+    const imageY = useTransform(scrollYProgress, [0.1, 0.36, 0.37], ["0vh", "80vh", "0vh"]);
+    const imageVis = useTransform(scrollYProgress, [0.35, 0.36], ["visible", "hidden"]);
 
     return (
         <div ref={targetRef} className='relative h-[500vh]'>
+            
             <div className='sticky top-0 h-[100vh] bg-forestGreen grid grid-cols-12 grid-rows-12'>
-                <Navbar></Navbar>
+                
 
                 {/* Background Shapes */}
                 <motion.div style={{marginLeft: accentTriX, visibility: accenTriVis}} className='col-start-11 col-end-11 top-0 right-0 h-0 w-0 border-b-accentOne border-l-transparent border-b-[100vh] border-l-[8.4vw]'></motion.div>
@@ -76,9 +81,9 @@ function Hero() {
                 </div>
 
                 {/* Text + Images */}
-                <div className='col-start-7 col-end-11 row-start-4 row-end-12 mt-6 ml-12 -mr-8'>
+                <motion.div style={{y: imageY, visibility: imageVis}} className='col-start-7 col-end-11 row-start-4 row-end-12 mt-6 ml-12 -mr-8'>
                     <img src="../imgs/sadie.JPG" className='object-cover w-full h-full rounded-lg' alt="Coleman Walsh Headshot"></img>
-                </div>
+                </motion.div>
                 <motion.div style={{x: titleX, visibility: titleXVis}} className='row-start-3 row-end-5 w-[100vw] flex justify-left items-center'>
                     <h1 className='text-[9vw] text-backgroundGrey font-dmSerif ml-[10vw]'>Coleman Walsh</h1>
                 </motion.div>
@@ -88,6 +93,7 @@ function Hero() {
                 
                
             </div>
+            <Navbar></Navbar>
         </div>
     );
 }
