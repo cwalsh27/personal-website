@@ -6,7 +6,7 @@ function Navbar() {
 
     const { scrollYProgress } = useScroll();
 
-    const navBackground = useTransform(scrollYProgress, [0, 0.52, 0.53], ["transparent", "transparent", "#a24936"])
+    const navBackground = useTransform(scrollYProgress, [0, 0.45, 0.53], ["transparent", "#2b4141", "#a24936"])
 
     return (
         <motion.div style={{background: navBackground}} className='top-0 flex justify-between w-full h-[13vh] fixed'>
