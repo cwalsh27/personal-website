@@ -14,7 +14,7 @@ function Hero() {
 
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
-        // container: targetRef
+        target: targetRef
     });
 
     // Accent Triangle Animations
@@ -28,38 +28,41 @@ function Hero() {
     const subtitleXVis = useTransform(scrollYProgress, [0.0, 0.45, 0.46], ["visible", "visible", "hidden"]);
 
     // Contact Icon Animations
-    const iconAX = useTransform(scrollYProgress, [0.03, 0.25, 0.3], ["0vw", "0vw", "-3.5vw"])
-    const iconAY = useTransform(scrollYProgress, [0.03, 0.3], ["0vh", "-30vh"])
-    const iconAVis = useTransform(scrollYProgress, [0.03, 0.29], ["visible", "hidden"])
+    const iconAX = useTransform(scrollYProgress, [0.03, 0.25, 0.3], ["0vw", "0vw", "-3.5vw"]);
+    const iconAY = useTransform(scrollYProgress, [0.03, 0.3], ["0vh", "-30vh"]);
+    const iconAVis = useTransform(scrollYProgress, [0.03, 0.29], ["visible", "hidden"]);
 
-    const iconBX = useTransform(scrollYProgress, [0.05, 0.27, 0.32], ["0vw", "0vw", "-3.5vw"])
-    const iconBY = useTransform(scrollYProgress, [0.05, 0.32], ["0vh", "-41vh"])
-    const iconBVis = useTransform(scrollYProgress, [0.05, 0.31], ["visible", "hidden"])
+    const iconBX = useTransform(scrollYProgress, [0.05, 0.27, 0.32], ["0vw", "0vw", "-3.5vw"]);
+    const iconBY = useTransform(scrollYProgress, [0.05, 0.32], ["0vh", "-41vh"]);
+    const iconBVis = useTransform(scrollYProgress, [0.05, 0.31], ["visible", "hidden"]);
 
-    const iconCX = useTransform(scrollYProgress, [0.07, 0.29, 0.34], ["0vw", "0vw", "-3.5vw"])
-    const iconCY = useTransform(scrollYProgress, [0.07, 0.34], ["0vh", "-52vh"])
-    const iconCVis = useTransform(scrollYProgress, [0.07, 0.33], ["visible", "hidden"])
+    const iconCX = useTransform(scrollYProgress, [0.07, 0.29, 0.34], ["0vw", "0vw", "-3.5vw"]);
+    const iconCY = useTransform(scrollYProgress, [0.07, 0.34], ["0vh", "-52vh"]);
+    const iconCVis = useTransform(scrollYProgress, [0.07, 0.33], ["visible", "hidden"]);
 
-    const iconDX = useTransform(scrollYProgress, [0.09, 0.31, 0.36], ["0vw", "0vw", "-3.5vw"])
-    const iconDY = useTransform(scrollYProgress, [0.09, 0.36], ["0vh", "-63vh"])
-    const iconDVis = useTransform(scrollYProgress, [0.09, 0.35], ["visible", "hidden"])
+    const iconDX = useTransform(scrollYProgress, [0.09, 0.31, 0.36], ["0vw", "0vw", "-3.5vw"]);
+    const iconDY = useTransform(scrollYProgress, [0.09, 0.36], ["0vh", "-63vh"]);
+    const iconDVis = useTransform(scrollYProgress, [0.09, 0.35], ["visible", "hidden"]);
 
     //Home Image Animation
     const imageY = useTransform(scrollYProgress, [0.1, 0.36, 0.37], ["0vh", "80vh", "0vh"]);
     const imageVis = useTransform(scrollYProgress, [0.35, 0.36], ["visible", "hidden"]);
 
     //Stage 2 Text Animations
-    const aboutTitleX = useTransform(scrollYProgress, [0.65, 0.85], ["-50vw", "0vw"])
-    const aboutTitleVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"])
+    const aboutTitleX = useTransform(scrollYProgress, [0.65, 0.85], ["-50vw", "0vw"]);
+    const aboutTitleVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"]);
 
-    const paraOneX = useTransform(scrollYProgress, [0.6, 0.8], ["-50vw", "0vw"])
-    const paraOneVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"])
+    const paraOneX = useTransform(scrollYProgress, [0.6, 0.8], ["-50vw", "0vw"]);
+    const paraOneVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"]);
     
-    const paraTwoX = useTransform(scrollYProgress, [0.55, 0.75], ["-50vw", "0vw"])
-    const paraTwoVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"])
+    const paraTwoX = useTransform(scrollYProgress, [0.55, 0.75], ["-50vw", "0vw"]);
+    const paraTwoVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"]);
     
-    const paraThreeX = useTransform(scrollYProgress, [0.5, 0.7], ["-50vw", "0vw"])
-    const paraThreeVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"])
+    const paraThreeX = useTransform(scrollYProgress, [0.5, 0.7], ["-50vw", "0vw"]);
+    const paraThreeVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"]);
+
+    const headshotX = useTransform(scrollYProgress, [0.469, 0.47, 0.65], ["0vw", "42vw", "0vw"]);
+    const headshotVis = useTransform(scrollYProgress, [0.47, 0.471], ["hidden", "visible"]);
 
     return (
         <div ref={targetRef} className='relative h-[500vh]'>
@@ -132,7 +135,10 @@ function Hero() {
                     </motion.div>
                 </div>
 
-                {/* Images */}
+                {/* Image */}
+                <motion.div style={{x: headshotX, visibility: headshotVis}} className='col-start-8 col-end-12 row-start-3 row-end-12 bg-white rounded-2xl'>
+
+                </motion.div>
                 
                
             </div>
