@@ -49,16 +49,16 @@ function Hero() {
     const imageVis = useTransform(scrollYProgress, [0.35, 0.36], ["visible", "hidden"]);
 
     //Stage 2 Text Animations
-    const aboutTitleX = useTransform(scrollYProgress, [0.65, 0.85], ["-50vw", "0vw"]);
+    const aboutTitleX = useTransform(scrollYProgress, [0.65, 0.75], ["-50vw", "0vw"]);
     const aboutTitleVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"]);
 
-    const paraOneX = useTransform(scrollYProgress, [0.6, 0.8], ["-50vw", "0vw"]);
+    const paraOneX = useTransform(scrollYProgress, [0.6, 0.7], ["-50vw", "0vw"]);
     const paraOneVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"]);
     
-    const paraTwoX = useTransform(scrollYProgress, [0.55, 0.75], ["-50vw", "0vw"]);
+    const paraTwoX = useTransform(scrollYProgress, [0.55, 0.65], ["-50vw", "0vw"]);
     const paraTwoVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"]);
     
-    const paraThreeX = useTransform(scrollYProgress, [0.5, 0.7], ["-50vw", "0vw"]);
+    const paraThreeX = useTransform(scrollYProgress, [0.5, 0.6], ["-50vw", "0vw"]);
     const paraThreeVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"]);
 
     const headshotX = useTransform(scrollYProgress, [0.469, 0.47, 0.65], ["0vw", "42vw", "0vw"]);
