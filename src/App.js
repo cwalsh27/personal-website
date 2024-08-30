@@ -9,9 +9,17 @@ function App() {
     <div className="App">
       <ReactLenis root>
         <Hero />
-        <RightResearchCard bgcolor="blue" imgsrc="../imgs/fintech.png" imageFit="cover"/>
-        <RightResearchCard bgcolor="blue" imgsrc="../imgs/cmu_poster.JPG" imageFit="fill"/>
-        <RightResearchCard bgcolor="blue" imgsrc="../imgs/banner.png"/>
+        <RightResearchCard 
+        title="Trustworthy AI Lab" 
+        imgsrc="../imgs/fintech.png" 
+        imageFit="cover"
+        text="Research under Dr. Xi Peng applying computer vision segmentation methods to the sonar domain to improve seafloor mapping of erosion patterns."
+        />
+        <RightResearchCard title="CMU Glaciology REU" imgsrc="../imgs/cmu_poster.JPG" imageFit="fill"
+        text="Summer 2024 REU program at Carnegie Mellon University, studying glaciology under Dr. David Rounce. I worked with Claire Wilson to produce data products for her PyGEM-EB glacier model so that it could include data form wildfire emissions and consequent black carbon deposition."
+        />
+        <RightResearchCard title="Voice & Motor Lab" imgsrc="../imgs/banner.png"/>
+        <RightResearchCard title="SLAM Lab" imgsrc="../imgs/banner.png"/>
         <div className='h-[100vh] bg-background'></div>
       </ReactLenis>
       

@@ -17,6 +17,8 @@ function Hero() {
         target: targetRef
     });
 
+    
+
     // Accent Triangle Animations
     const accentTriX = useTransform(scrollYProgress, [0.0, 0.35, 0.46, 0.47], ["0vw", "0vw", "15vw", "0vw"]);
     const accenTriVis = useTransform(scrollYProgress, [0.0, 0.45, 0.46], ["visible", "visible", "hidden"]);
