@@ -122,7 +122,7 @@ function Hero() {
                     <motion.div style={{x: paraOneX, visibility: paraOneVis}} className='flex justify-left items-center'>
                         <p className='text-backgroundGrey text-2xl font-dmSerif text-left'>
                             I am a student at the University of Delaware majoring in cognitive science (linguistics specialization) and computer science (AI concentration) and minoring in neuroscience. 
-                            These interests have fostered an interest in interdisciplinary research, which has led me to contribute to projects ranging from speech acquisition and vocal production, convolutional neural networks and segmentation, and glacial melt. 
+                            These interests have fostered an interest in interdisciplinary research, which has led me to contribute to projects ranging from speech acquisition and vocal production to AI image segmentation. 
                         </p>
                     </motion.div>
                     <motion.div style={{x: paraTwoX, visibility: paraTwoVis}} className='flex justify-left items-center'>
@@ -132,7 +132,7 @@ function Hero() {
                     </motion.div>
                     <motion.div style={{x: paraThreeX, visibility: paraThreeVis}} className='flex justify-left items-center'>
                         <p className='text-backgroundGrey text-2xl font-dmSerif text-left'>
-                            When I'm not working, I'm a piano player learning guitar on the UD club sailing team. 
+                            When I'm not working, I play piano and compete on the UD club sailing team. 
                         </p>
                     </motion.div>
                 </div>
