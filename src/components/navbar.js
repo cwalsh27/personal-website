@@ -9,8 +9,8 @@ function Navbar() {
     const navBackground = useTransform(scrollYProgress, [0.4, 0.45, 0.53], ["transparent", "#2b4141", "#a24936"])
 
     return (
-        <motion.div style={{background: navBackground}} className='top-0 flex justify-between w-full h-[13vh] fixed'>
-           <div className='w-1/6 ml-[9vw] mt-1'>
+        <motion.div style={{background: navBackground}} className='top-0 flex justify-between w-full h-[11vh] fixed'>
+           <div className='w-1/6 ml-[9vw]'>
             <img src="../imgs/signature.png" className='h-full w-full'></img>
            </div>
            <div className='flex justify-around items-center mr-[5vw] mt-[1vh]'>
