@@ -1,16 +1,25 @@
 import './App.css';
-import Hero from './components/Hero';
+import Hero from './components/hero';
 
 
 function App() {
   return (
-    <div className="App bg-forestGreen">
+    <div className="App">
       
       <Hero />
+      <div className='h-[100vh] bg-slate-500'>
+
+      </div>
+      <div className='h-[100vh] bg-slate-200'>
+
+      </div>
+      <div className='h-[100vh] bg-slate-500'>
+
+      </div>
       
       
       
-      <div className='h-screen'></div>
+      
     </div>
   );
 }

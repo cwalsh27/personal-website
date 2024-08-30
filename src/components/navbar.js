@@ -3,7 +3,7 @@ import React from 'react';
 function Navbar() {
 
     return (
-        <div className='absolute top-0 flex justify-between w-full h-[13vh]'>
+        <div className='top-0 flex justify-between w-full h-[13vh] fixed'>
            <div className='w-1/5 ml-[9vw] mt-1'>
             <img src="../imgs/signature.png" className='h-full w-full'></img>
            </div>
