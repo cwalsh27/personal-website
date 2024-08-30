@@ -19,7 +19,8 @@ module.exports = {
         accentOne: '#a24936',
         accentTwo: '#ffd29d',
         titleColor: '#f0f9ff',
-        navbarColor: '#dbdfe6'
+        navbarDefaultColor: '#94a3b8',
+        navbarSelectedColor: '#dbdfe6'
       },
     },
   },
