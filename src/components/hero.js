@@ -13,7 +13,9 @@ import Navbar from "./navbar"
 function Hero() {
 
     const targetRef = useRef(null);
-    const { scrollYProgress } = useScroll();
+    const { scrollYProgress } = useScroll({
+        // container: targetRef
+    });
 
     // Accent Triangle Animations
     const accentTriX = useTransform(scrollYProgress, [0.0, 0.35, 0.46, 0.47], ["0vw", "0vw", "15vw", "0vw"]);
@@ -45,6 +47,19 @@ function Hero() {
     //Home Image Animation
     const imageY = useTransform(scrollYProgress, [0.1, 0.36, 0.37], ["0vh", "80vh", "0vh"]);
     const imageVis = useTransform(scrollYProgress, [0.35, 0.36], ["visible", "hidden"]);
+
+    //Stage 2 Text Animations
+    const aboutTitleX = useTransform(scrollYProgress, [0.65, 0.85], ["-50vw", "0vw"])
+    const aboutTitleVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"])
+
+    const paraOneX = useTransform(scrollYProgress, [0.6, 0.8], ["-50vw", "0vw"])
+    const paraOneVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"])
+    
+    const paraTwoX = useTransform(scrollYProgress, [0.55, 0.75], ["-50vw", "0vw"])
+    const paraTwoVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"])
+    
+    const paraThreeX = useTransform(scrollYProgress, [0.5, 0.7], ["-50vw", "0vw"])
+    const paraThreeVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"])
 
     return (
         <div ref={targetRef} className='relative h-[500vh]'>
@@ -80,7 +95,7 @@ function Hero() {
                     </motion.a>
                 </div>
 
-                {/* Text + Images */}
+                {/* Stage 1 Text + Images */}
                 <motion.div style={{y: imageY, visibility: imageVis}} className='col-start-7 col-end-11 row-start-4 row-end-12 mt-6 ml-12 -mr-8'>
                     <img src="../imgs/sadie.JPG" className='object-cover w-full h-full rounded-lg' alt="Coleman Walsh Headshot"></img>
                 </motion.div>
@@ -90,6 +105,34 @@ function Hero() {
                 <div className='row-start-5 w-[80vw] flex justify-left items-top'>
                     <motion.h1 style={{x: subtitleX, visibility: subtitleXVis}} className='text-[2.1vw] text-backgroundGrey font-dmSerif ml-[10.5vw] xl:mt-[1vw]'>Cognitive Science <span style={{color: "#a24936", fontWeight: "bold"}}>|</span> Linguistics <span style={{color: "#a24936", fontWeight: "bold"}}>|</span> Computer Science</motion.h1>
                 </div>
+
+                {/* Stage 2 Text + Images */}
+                {/* Title */}
+                <motion.div style={{x: aboutTitleX, visibility: aboutTitleVis}} className='row-start-3 row-end-4 w-[100vw] flex justify-left items-center'>
+                    <h3 className='text-backgroundGrey text-4xl font-dmSerif'>About Me</h3>
+                </motion.div>
+
+                {/* Paragraphs */}
+                <div className='row-start-4 row-end-12 w-[40vw] flex flex-col justify-around'>
+                    <motion.div style={{x: paraOneX, visibility: paraOneVis}} className='flex justify-left items-center'>
+                        <p className='text-backgroundGrey text-2xl font-dmSerif text-left'>
+                            I am a student at the University of Delaware majoring in cognitive science (linguistics specialization) and computer science (AI concentration) and minoring in neuroscience. 
+                            These interests have fostered an interest in interdisciplinary research, which has led me to contribute to projects ranging from speech acquisition and vocal production, convolutional neural networks and segmentation, and glacial melt. 
+                        </p>
+                    </motion.div>
+                    <motion.div style={{x: paraTwoX, visibility: paraTwoVis}} className='flex justify-left items-center'>
+                        <p className='text-backgroundGrey text-2xl font-dmSerif text-left'>
+                            Now, I am in my junior year and seeking research opportunities in brain-computer interfaces and generative neurological mapping. 
+                        </p>
+                    </motion.div>
+                    <motion.div style={{x: paraThreeX, visibility: paraThreeVis}} className='flex justify-left items-center'>
+                        <p className='text-backgroundGrey text-2xl font-dmSerif text-left'>
+                            When I'm not working, I'm a piano player learning guitar on the UD club sailing team. 
+                        </p>
+                    </motion.div>
+                </div>
+
+                {/* Images */}
                 
                
             </div>
