@@ -1,5 +1,6 @@
 import './App.css';
 import Hero from './components/hero';
+import RightResearchCard from './components/rightresearchcard';
 
 
 function App() {
@@ -7,15 +8,10 @@ function App() {
     <div className="App">
       
       <Hero />
-      <div className='h-[100vh] bg-slate-500'>
-
-      </div>
-      <div className='h-[100vh] bg-slate-200'>
-
-      </div>
-      <div className='h-[100vh] bg-slate-500'>
-
-      </div>
+      <RightResearchCard bgcolor="blue" />
+      <RightResearchCard bgcolor="blue" />
+      <RightResearchCard bgcolor="blue" />
+      <div className='h-[100vh] bg-background'></div>
       
       
       
