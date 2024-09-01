@@ -26,6 +26,7 @@ function App() {
         <Portfolio></Portfolio>
         <div className='h-[100vh] bg-background'></div>
         
+        
       </ReactLenis>
       
       
