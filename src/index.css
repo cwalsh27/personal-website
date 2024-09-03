@@ -22,3 +22,9 @@ code {
 html {
   position: relative;
 }
+
+.scrolling-wrapper {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

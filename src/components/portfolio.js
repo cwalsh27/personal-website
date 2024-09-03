@@ -5,13 +5,15 @@ import PortfolioCard from "./portfoliocard";
 function Portfolio() {
 
     return (
-        <div class="scrolling-wrapper" className="w-full h-[80vh] bg-background overflow-x-scroll overflow-y-hidden whitespace-nowrap">
-            <PortfolioCard></PortfolioCard>
-            <PortfolioCard></PortfolioCard>
-            <PortfolioCard></PortfolioCard>
-            <PortfolioCard></PortfolioCard>
-            <PortfolioCard></PortfolioCard>
+        
+        <div class="scrolling-wrapper" className="w-full h-[80vh] bg-background flex flex-nowrap overflow-x-auto items-center">
+            <PortfolioCard title="Project Title" desc="THis is hte desc of the project"></PortfolioCard>
+            <PortfolioCard title="Project Title" desc="THis is hte desc of the project"></PortfolioCard>
+            <PortfolioCard title="Project Title" desc="THis is hte desc of the project"></PortfolioCard>
+            <PortfolioCard title="Project Title" desc="THis is hte desc of the project"></PortfolioCard>
+            <PortfolioCard title="Project Title" desc="THis is hte desc of the project"></PortfolioCard>
         </div>  
+        
     )
 }
 
