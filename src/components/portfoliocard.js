@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 
 function PortfolioCard (props) {
     return (
-        <motion.div  
+        <motion.a  
+        href={props.link}
         whileHover={{scale: 1.1}}
         className="h-[75%] w-[27%] mx-12 rounded-2xl shadow-2xl bg-gradient-to-br from-white to-slate-200 flex justify-between flex-col hover:scale-105" style={{flex: "0 0 auto"}}>
             <div>
@@ -13,7 +14,7 @@ function PortfolioCard (props) {
             <div className="mb-8">
                 <p className="text-xl font-dmSerif">{props.plurality}{props.langs}</p>
             </div>
-        </motion.div>
+        </motion.a>
     )
 }
 
