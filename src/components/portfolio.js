@@ -11,7 +11,9 @@ function Portfolio() {
             <PortfolioCard title="Bigram/Trigram Language Model" desc="Built algorithm that trains on a corpus of common sentences and then produces novel ones based on next word probabilities. Further adapted that algorithm into a rudimentary predictive text algorithm for a hypothetical email client."></PortfolioCard>
             <PortfolioCard title="SLAM Lab Data Reconciliation" desc="Authored scripts to automate existing manual data reconciliation process, reducing its duration by 70%"></PortfolioCard>
             <PortfolioCard title="Seafloor Rasterizer" desc="Worked on small team to develop rasterization scripts for sonar imagery of seafloor, preparing the data for AI segmentation tasks with ResNet-18 backbone."></PortfolioCard>
-            <PortfolioCard title="Project Title" desc="THis is hte desc of the project"></PortfolioCard>
+            <PortfolioCard title="VoiceApp" desc="Web app porting scripts designed with the Voice & Motor Lab. Functions include spreadsheet parsing and document editing for various projects. Most complicated example performs audio spectrum analysis to define intervals for MRI runs."></PortfolioCard>
+            <PortfolioCard title="Title" desc="blah blah blah"></PortfolioCard>
+            <PortfolioCard title="Title" desc="blah blah blah"></PortfolioCard>
         </div>  
         
     )
