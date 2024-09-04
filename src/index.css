@@ -4,6 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Text&family=Merriweather:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,700;1,700&family=Work+Sans:wght@400;500;800&display=swap');
 
+/* Fixed overflow problem */
+html {
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
