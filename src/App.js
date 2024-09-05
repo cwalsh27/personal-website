@@ -13,6 +13,7 @@ function App() {
       <ReactLenis root>
         <Hero />
         <RightResearchCard 
+        idFix="frc"
         title="Trustworthy AI Lab" 
         imgsrc="../imgs/fintech.png" 
         imageFit="cover"

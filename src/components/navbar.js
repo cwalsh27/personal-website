@@ -14,10 +14,13 @@ function Navbar() {
             <img src="../imgs/signature.png" className='h-full w-full'></img>
            </div>
            <div className='flex justify-around items-center mr-[5vw] mt-[1vh]'>
-            <motion.a href="" whileHover={{color: "#dbdfe6"}} className='ml-[3vw] text-lg text-backgroundGrey'>RESUME</motion.a>
-            <motion.a href="" whileHover={{color: "#dbdfe6"}} className='ml-[3vw] text-lg text-navbarDefaultColor'>RESEARCH</motion.a>
-            <motion.a href="" whileHover={{color: "#dbdfe6"}} className='ml-[3vw] text-lg text-slate-400'>PROJECTS</motion.a>
-            <motion.a href="" whileHover={{color: "#dbdfe6"}} className='ml-[3vw] text-lg text-slate-400'>CONTACT</motion.a>
+            <motion.a 
+            target="_blank"
+            href="https://docs.google.com/document/d/1zx0uWROm3OzecYIdamuV8V3HRh1dGqX3LJWZBgM_R38/edit?usp=drive_link" 
+            whileHover={{color: "#dbdfe6"}} className='ml-[3vw] text-lg text-navbarDefaultColor'>RESUME</motion.a>
+            <motion.a href="#frc" whileHover={{color: "#dbdfe6"}} className='ml-[3vw] text-lg text-navbarDefaultColor'>RESEARCH</motion.a>
+            <motion.a href="" whileHover={{color: "#dbdfe6"}} className='ml-[3vw] text-lg text-navbarDefaultColor'>PROJECTS</motion.a>
+            <motion.a href="" whileHover={{color: "#dbdfe6"}} className='ml-[3vw] text-lg text-navbarDefaultColor'>CONTACT</motion.a>
            </div>
         </motion.div>
         
