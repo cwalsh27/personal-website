@@ -14,7 +14,9 @@ function Navbar() {
     return (
         <motion.div style={{background: navBackground}} className='top-0 flex justify-between w-full h-[11vh] fixed z-50'>
            <div className='w-1/6 ml-[9vw]'>
-            <img src="../imgs/signature.png" className='h-full w-full'></img>
+            <a href="#home">
+                <img src="../imgs/signature.png" className='h-full w-full'/>
+            </a>
            </div>
            <div className='flex justify-around items-center mr-[5vw] mt-[1vh]'>
             <motion.a 

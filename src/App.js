@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <ReactLenis root>
+        <div id="home"></div>
         <Hero />
         <RightResearchCard 
         idFix="frc"
