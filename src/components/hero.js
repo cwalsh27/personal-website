@@ -78,22 +78,22 @@ function Hero() {
                 
                 {/* Third attempt, restructured layout for more minimalist artsy feel */}
                 <div className='col-start-12 col-end-12 row-start-5 row-end-10 flex flex-col justify-between items-center pr-2'>
-                    <motion.a style={{ x: iconAX, y: iconAY, visibility: iconAVis }} href="mailto:colemanwalsh27@gmail.com" className='rounded-full p-4 hover:bg-slate-400'>
+                    <motion.a whileHover={{scale: 1.3}} style={{ x: iconAX, y: iconAY, visibility: iconAVis }} href="mailto:colemanwalsh27@gmail.com" className='rounded-full p-4'>
                         <IconContext.Provider value={{ color: "dbdfe6", size: "2em" }}>
                             <FiMail/>
                         </IconContext.Provider>
                     </motion.a>
-                    <motion.a style={{ x: iconBX, y: iconBY, visibility: iconBVis }} href="https://www.linkedin.com/in/coleman-walsh27/" className='rounded-full p-4 hover:bg-slate-400'>
+                    <motion.a whileHover={{scale: 1.3}} style={{ x: iconBX, y: iconBY, visibility: iconBVis }} href="https://www.linkedin.com/in/coleman-walsh27/" className='rounded-full p-4'>
                         <IconContext.Provider value={{ color: "dbdfe6", size: "2em" }}>
                             <FaLinkedinIn/>
                         </IconContext.Provider>
                     </motion.a>
-                    <motion.a style={{ x: iconCX, y: iconCY, visibility: iconCVis }} href="https://github.com/cwalsh27" className='rounded-full p-4 hover:bg-slate-400'>
+                    <motion.a whileHover={{scale: 1.3}} style={{ x: iconCX, y: iconCY, visibility: iconCVis }} href="https://github.com/cwalsh27" className='rounded-full p-4'>
                         <IconContext.Provider value={{ color: "dbdfe6", size: "2em" }}>
                             <FaGithub/>
                         </IconContext.Provider>
                     </motion.a>
-                    <motion.a style={{ x: iconDX, y: iconDY, visibility: iconDVis }} href="https://docs.google.com/document/d/1zx0uWROm3OzecYIdamuV8V3HRh1dGqX3LJWZBgM_R38/edit?usp=drive_link" className='rounded-full p-4 hover:bg-slate-400'>
+                    <motion.a whileHover={{scale: 1.3}} style={{ x: iconDX, y: iconDY, visibility: iconDVis }} href="https://docs.google.com/document/d/1zx0uWROm3OzecYIdamuV8V3HRh1dGqX3LJWZBgM_R38/edit?usp=drive_link" className='rounded-full p-4'>
                         <IconContext.Provider value={{ color: "#dbdfe6", size: "2em" }}>
                             <IoLink/>
                         </IconContext.Provider>
