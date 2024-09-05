@@ -22,7 +22,7 @@ function Navbar() {
             href="https://docs.google.com/document/d/1zx0uWROm3OzecYIdamuV8V3HRh1dGqX3LJWZBgM_R38/edit?usp=drive_link" 
             whileHover={{color: "#dbdfe6"}} className='ml-[3vw] text-lg text-navbarDefaultColor'>RESUME</motion.a>
             <motion.a href="#frc" onClick={() => {lenis?.scrollTo("#frc", {offset:-100});}} whileHover={{color: "#dbdfe6"}} className='ml-[3vw] text-lg text-navbarDefaultColor'>RESEARCH</motion.a>
-            <motion.a href="" whileHover={{color: "#dbdfe6"}} className='ml-[3vw] text-lg text-navbarDefaultColor'>PROJECTS</motion.a>
+            <motion.a href="#portTag" onClick={() => {lenis?.scrollTo("#portTag", {offset:-100});}} whileHover={{color: "#dbdfe6"}} className='ml-[3vw] text-lg text-navbarDefaultColor'>PROJECTS</motion.a>
             <motion.a href="" whileHover={{color: "#dbdfe6"}} className='ml-[3vw] text-lg text-navbarDefaultColor'>CONTACT</motion.a>
            </div>
         </motion.div>

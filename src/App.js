@@ -24,7 +24,7 @@ function App() {
         />
         <RightResearchCard title="Voice & Motor Lab" imgsrc="../imgs/banner.png"/>
         <LeftResearchCard title="SLAM Lab" imgsrc="../imgs/banner.png"/>
-        <Portfolio></Portfolio>
+        <Portfolio idFix="portTag"></Portfolio>
         <div className='h-[100vh] bg-background'></div>
         
         

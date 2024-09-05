@@ -3,11 +3,11 @@ import { ReactLenis } from "lenis/dist/lenis-react";
 import PortfolioCard from "./portfoliocard";
 
 
-function Portfolio() {
+function Portfolio(props) {
 
     return (
         <>
-        <h1 className="text-6xl font-dmSerif bg-background text-white pt-10">Portfolio</h1>
+        <h1 id={props.idFix} className="text-6xl font-dmSerif bg-background text-white pt-10">Portfolio</h1>
         <div class="scrolling-wrapper" className="w-full h-[80vh] bg-background flex flex-nowrap overflow-x-auto items-center" style={{scrollbarWidth: "none"}}>
             <PortfolioCard 
                 link="https://jassaini101.github.io/JobNav/" 
