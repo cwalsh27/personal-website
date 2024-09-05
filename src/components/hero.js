@@ -83,17 +83,17 @@ function Hero() {
                             <FiMail/>
                         </IconContext.Provider>
                     </motion.a>
-                    <motion.a whileHover={{scale: 1.3}} style={{ x: iconBX, y: iconBY, visibility: iconBVis }} href="https://www.linkedin.com/in/coleman-walsh27/" className='rounded-full p-4'>
+                    <motion.a whileHover={{scale: 1.3}} style={{ x: iconBX, y: iconBY, visibility: iconBVis }} target="_blank" href="https://www.linkedin.com/in/coleman-walsh27/" className='rounded-full p-4'>
                         <IconContext.Provider value={{ color: "dbdfe6", size: "2em" }}>
                             <FaLinkedinIn/>
                         </IconContext.Provider>
                     </motion.a>
-                    <motion.a whileHover={{scale: 1.3}} style={{ x: iconCX, y: iconCY, visibility: iconCVis }} href="https://github.com/cwalsh27" className='rounded-full p-4'>
+                    <motion.a whileHover={{scale: 1.3}} style={{ x: iconCX, y: iconCY, visibility: iconCVis }} target="_blank" href="https://github.com/cwalsh27" className='rounded-full p-4'>
                         <IconContext.Provider value={{ color: "dbdfe6", size: "2em" }}>
                             <FaGithub/>
                         </IconContext.Provider>
                     </motion.a>
-                    <motion.a whileHover={{scale: 1.3}} style={{ x: iconDX, y: iconDY, visibility: iconDVis }} href="https://docs.google.com/document/d/1zx0uWROm3OzecYIdamuV8V3HRh1dGqX3LJWZBgM_R38/edit?usp=drive_link" className='rounded-full p-4'>
+                    <motion.a whileHover={{scale: 1.3}} style={{ x: iconDX, y: iconDY, visibility: iconDVis }} target="_blank" href="https://docs.google.com/document/d/1zx0uWROm3OzecYIdamuV8V3HRh1dGqX3LJWZBgM_R38/edit?usp=drive_link" className='rounded-full p-4'>
                         <IconContext.Provider value={{ color: "#dbdfe6", size: "2em" }}>
                             <IoLink/>
                         </IconContext.Provider>

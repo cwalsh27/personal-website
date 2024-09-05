@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <ReactLenis root>
         <Hero />
+        <div id="frc"></div>
         <RightResearchCard 
-        idFix="frc"
         title="Trustworthy AI Lab" 
         imgsrc="../imgs/fintech.png" 
         imageFit="cover"
