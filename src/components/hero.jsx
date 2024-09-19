@@ -73,27 +73,28 @@ function Hero() {
                 
 
                 {/* Background Shapes */}
+                
                 <motion.div style={{marginLeft: accentTriX, visibility: accenTriVis}} className='col-start-11 col-end-11 top-0 right-0 h-0 w-0 border-b-accentOne border-l-transparent border-b-[100vh] border-l-[8.4vw]'></motion.div>
                 <motion.div style={{marginLeft: accentTriX, visibility: accenTriVis}} className='col-start-12 col-end-13 bg-accentOne h-[100vh]'></motion.div>
                 
-                {/* Third attempt, restructured layout for more minimalist artsy feel */}
+                {/* Stage 1 Icons */}
                 <div className='col-start-12 col-end-12 row-start-5 row-end-10 flex flex-col justify-between items-center pr-2'>
                     <motion.a whileHover={{scale: 1.3}} style={{ x: iconAX, y: iconAY, visibility: iconAVis }} href="mailto:colemanwalsh27@gmail.com" className='rounded-full p-4'>
                         <IconContext.Provider value={{ color: "dbdfe6", size: "2em" }}>
                             <FiMail/>
                         </IconContext.Provider>
                     </motion.a>
-                    <motion.a whileHover={{scale: 1.3}} style={{ x: iconBX, y: iconBY, visibility: iconBVis }} href="https://www.linkedin.com/in/coleman-walsh27/" className='rounded-full p-4'>
+                    <motion.a whileHover={{scale: 1.3}} style={{ x: iconBX, y: iconBY, visibility: iconBVis }} target="_blank" href="https://www.linkedin.com/in/coleman-walsh27/" className='rounded-full p-4'>
                         <IconContext.Provider value={{ color: "dbdfe6", size: "2em" }}>
                             <FaLinkedinIn/>
                         </IconContext.Provider>
                     </motion.a>
-                    <motion.a whileHover={{scale: 1.3}} style={{ x: iconCX, y: iconCY, visibility: iconCVis }} href="https://github.com/cwalsh27" className='rounded-full p-4'>
+                    <motion.a whileHover={{scale: 1.3}} style={{ x: iconCX, y: iconCY, visibility: iconCVis }} target="_blank" href="https://github.com/cwalsh27" className='rounded-full p-4'>
                         <IconContext.Provider value={{ color: "dbdfe6", size: "2em" }}>
                             <FaGithub/>
                         </IconContext.Provider>
                     </motion.a>
-                    <motion.a whileHover={{scale: 1.3}} style={{ x: iconDX, y: iconDY, visibility: iconDVis }} href="https://docs.google.com/document/d/1zx0uWROm3OzecYIdamuV8V3HRh1dGqX3LJWZBgM_R38/edit?usp=drive_link" className='rounded-full p-4'>
+                    <motion.a whileHover={{scale: 1.3}} style={{ x: iconDX, y: iconDY, visibility: iconDVis }} target="_blank" href="https://docs.google.com/document/d/1zx0uWROm3OzecYIdamuV8V3HRh1dGqX3LJWZBgM_R38/edit?usp=drive_link" className='rounded-full p-4'>
                         <IconContext.Provider value={{ color: "#dbdfe6", size: "2em" }}>
                             <IoLink/>
                         </IconContext.Provider>
@@ -110,6 +111,7 @@ function Hero() {
                 <div className='row-start-5 w-[80vw] flex justify-left items-top'>
                     <motion.h1 style={{x: subtitleX, visibility: subtitleXVis}} className='text-[2.1vw] text-backgroundGrey font-dmSerif ml-[10.5vw] xl:mt-[1vw]'>Cognitive Science <span style={{color: "#a24936", fontWeight: "bold"}}>|</span> Linguistics <span style={{color: "#a24936", fontWeight: "bold"}}>|</span> Computer Science</motion.h1>
                 </div>
+                
 
                 {/* Stage 2 Text + Images */}
                 {/* Title */}

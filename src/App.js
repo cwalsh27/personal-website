@@ -11,8 +11,10 @@ function App() {
   return (
     <div className="App">
       <ReactLenis root>
+        <div id="home"></div>
         <Hero />
         <RightResearchCard 
+        idFix="frc"
         title="Trustworthy AI Lab" 
         imgsrc="../imgs/fintech.png" 
         imageFit="cover"
@@ -23,10 +25,8 @@ function App() {
         />
         <RightResearchCard title="Voice & Motor Lab" imgsrc="../imgs/banner.png"/>
         <LeftResearchCard title="SLAM Lab" imgsrc="../imgs/banner.png"/>
-        <Portfolio></Portfolio>
+        <Portfolio idFix="portTag"></Portfolio>
         <div className='h-[100vh] bg-background'></div>
-        
-        
       </ReactLenis>
       
       

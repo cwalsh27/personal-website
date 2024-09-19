@@ -7,6 +7,8 @@
 /* Fixed overflow problem */
 html {
   overflow-x: hidden;
+  position: relative;
+  scroll-snap-type: y proximity;
 }
 
 body {
@@ -24,6 +26,3 @@ code {
     monospace;
 }
 
-html {
-  position: relative;
-}
