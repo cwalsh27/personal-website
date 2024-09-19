@@ -5,7 +5,6 @@ import LeftResearchCard from './components/leftresearchcard';
 
 import { ReactLenis } from "lenis/dist/lenis-react";
 import Portfolio from './components/portfolio';
-import ResearchParallax from './components/researchParallax';
 
 
 function App() {
@@ -27,11 +26,7 @@ function App() {
         <RightResearchCard title="Voice & Motor Lab" imgsrc="../imgs/banner.png"/>
         <LeftResearchCard title="SLAM Lab" imgsrc="../imgs/banner.png"/>
         <Portfolio idFix="portTag"></Portfolio>
-        <ResearchParallax></ResearchParallax>
         <div className='h-[100vh] bg-background'></div>
-
-        
-        
       </ReactLenis>
       
       
