@@ -2,7 +2,7 @@ import { React, useRef } from 'react';
 
 import { IconContext } from "react-icons";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
+import { FiMail, FiFile } from "react-icons/fi";
 import { IoLink } from "react-icons/io5";
 
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -69,7 +69,7 @@ function Hero() {
     return (
         <div ref={targetRef} className='relative h-[500vh]'>
             
-            <div className='sticky top-0 h-[100vh] bg-forestGreen grid grid-cols-12 grid-rows-12'>
+            <div className='sticky top-0 h-[100vh] bg-background grid grid-cols-12 grid-rows-12'>
                 
 
                 {/* Background Shapes */}
@@ -96,7 +96,7 @@ function Hero() {
                     </motion.a>
                     <motion.a whileHover={{scale: 1.3}} style={{ x: iconDX, y: iconDY, visibility: iconDVis }} target="_blank" href="https://docs.google.com/document/d/1zx0uWROm3OzecYIdamuV8V3HRh1dGqX3LJWZBgM_R38/edit?usp=drive_link" className='rounded-full p-4'>
                         <IconContext.Provider value={{ color: "#dbdfe6", size: "2em" }}>
-                            <IoLink/>
+                            <FiFile/>
                         </IconContext.Provider>
                     </motion.a>
                 </div>
@@ -109,7 +109,7 @@ function Hero() {
                     <h1 className='text-[9vw] text-backgroundGrey font-dmSerif ml-[10vw]'>Coleman Walsh</h1>
                 </motion.div>
                 <div className='row-start-5 w-[80vw] flex justify-left items-top'>
-                    <motion.h1 style={{x: subtitleX, visibility: subtitleXVis}} className='text-[2.1vw] text-backgroundGrey font-dmSerif ml-[10.5vw] xl:mt-[1vw]'>Cognitive Science <span style={{color: "#a24936", fontWeight: "bold"}}>|</span> Linguistics <span style={{color: "#a24936", fontWeight: "bold"}}>|</span> Computer Science</motion.h1>
+                    <motion.h1 style={{x: subtitleX, visibility: subtitleXVis}} className='text-[2.1vw] text-backgroundGrey font-dmSerif ml-[10.5vw] xl:mt-[1vw]'>Cognitive Science <span style={{color: "#a24936", fontWeight: "bold"}}>|</span> Computer Science <span style={{color: "#a24936", fontWeight: "bold"}}>|</span> Neuroscience</motion.h1>
                 </div>
                 
 
@@ -129,7 +129,7 @@ function Hero() {
                     </motion.div>
                     <motion.div style={{x: paraTwoX, visibility: paraTwoVis}} className='flex justify-left items-center'>
                         <p className='text-backgroundGrey text-2xl font-dmSerif text-left'>
-                            Now, I am in my junior year and seeking research opportunities in brain-computer interfaces and generative neurological mapping. 
+                            Now, I am in my junior year and seeking research opportunities in brain-computer interface, specificially with sensory rehabilitation applications. 
                         </p>
                     </motion.div>
                     <motion.div style={{x: paraThreeX, visibility: paraThreeVis}} className='flex justify-left items-center'>
