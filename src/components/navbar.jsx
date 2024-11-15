@@ -9,11 +9,11 @@ function Navbar() {
 
     const { scrollYProgress } = useScroll();
 
-    const navBackground = useTransform(scrollYProgress, [0.4, 0.44, 0.50], ["transparent", "#144866", "#88A2AA"])
+    const navBackground = useTransform(scrollYProgress, [0.4399, 0.44, 0.50], ["transparent", "#144866", "#6A3125"])
     const signatureMargin = useTransform(scrollYProgress, [0.10, 0.20], ["9vw", "6vw"])
 
     return (
-        <motion.div style={{background: navBackground}} className='top-0 flex justify-between w-full h-[11vh] fixed z-50'>
+        <motion.div style={{background: navBackground}} className='top-0 flex justify-between w-full h-[11vh] fixed z-50 drop-shadow-2xl'>
            <motion.div style={{marginLeft: signatureMargin}} className='w-1/6'>
             <a href="#home">
                 <img src="../imgs/signature.png" className='h-full w-full'/>

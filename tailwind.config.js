@@ -28,7 +28,7 @@ module.exports = {
         // Second color pass, based off blue cinos and cream crewneck combo
         // background: '#1D6087',
         background: '#144866',
-        accentOne: '#88A2AA',
+        accentOne: '#6A3125',             //chestnut: 994636      //best brown?: 6A3125
         accentTwo: '#af3800',
         titleColor: '#000000',
         navbarDefaultColor: '#dbdfe6',

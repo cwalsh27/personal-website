@@ -77,6 +77,19 @@ function Hero() {
                 <motion.div style={{marginLeft: accentTriX, visibility: accenTriVis}} className='col-start-11 col-end-11 top-0 right-0 h-0 w-0 border-b-accentOne border-l-transparent border-b-[100vh] border-l-[8.4vw]'></motion.div>
                 <motion.div style={{marginLeft: accentTriX, visibility: accenTriVis}} className='col-start-12 col-end-13 bg-accentOne h-[100vh]'></motion.div>
                 
+                
+
+                {/* Stage 1 Text + Images */}
+                <motion.div style={{y: imageY, visibility: imageVis}} className='col-start-7 col-end-13 row-start-2 row-end-13 mt-6 ml-12 -mr-8'>
+                    <img src="../imgs/blackt_smile_nobg.png" className='object-contain w-full h-full rounded-lg' alt="Coleman Walsh Headshot"></img>
+                </motion.div>
+                <motion.div style={{x: titleX, visibility: titleXVis}} className='row-start-3 row-end-5 w-[100vw] flex justify-left items-center'>
+                    <h1 className='text-[9vw] text-backgroundGrey font-dmSerif ml-[10vw]'>Coleman Walsh</h1>
+                </motion.div>
+                <div className='row-start-5 w-[80vw] flex justify-left items-top'>
+                    <motion.h1 style={{x: subtitleX, visibility: subtitleXVis}} className='text-[2.1vw] text-backgroundGrey font-dmSerif ml-[10.5vw] xl:mt-[1vw]'>Cognitive Science <span style={{color: "#6A3125", fontWeight: "bold"}}>|</span> Computer Science <span style={{color: "#6A3125", fontWeight: "bold"}}>|</span> Neuroscience</motion.h1>
+                </div>
+
                 {/* Stage 1 Icons */}
                 <div className='col-start-12 col-end-12 row-start-5 row-end-10 flex flex-col justify-between items-center pr-2'>
                     <motion.a whileHover={{scale: 1.3}} style={{ x: iconAX, y: iconAY, visibility: iconAVis }} href="mailto:colemanwalsh27@gmail.com" className='rounded-full p-4'>
@@ -99,17 +112,6 @@ function Hero() {
                             <FiFile/>
                         </IconContext.Provider>
                     </motion.a>
-                </div>
-
-                {/* Stage 1 Text + Images */}
-                <motion.div style={{y: imageY, visibility: imageVis}} className='col-start-7 col-end-11 row-start-4 row-end-12 mt-6 ml-12 -mr-8'>
-                    <img src="../imgs/sadie.JPG" className='object-cover w-full h-full rounded-lg' alt="Coleman Walsh Headshot"></img>
-                </motion.div>
-                <motion.div style={{x: titleX, visibility: titleXVis}} className='row-start-3 row-end-5 w-[100vw] flex justify-left items-center'>
-                    <h1 className='text-[9vw] text-backgroundGrey font-dmSerif ml-[10vw]'>Coleman Walsh</h1>
-                </motion.div>
-                <div className='row-start-5 w-[80vw] flex justify-left items-top'>
-                    <motion.h1 style={{x: subtitleX, visibility: subtitleXVis}} className='text-[2.1vw] text-backgroundGrey font-dmSerif ml-[10.5vw] xl:mt-[1vw]'>Cognitive Science <span style={{color: "#a24936", fontWeight: "bold"}}>|</span> Computer Science <span style={{color: "#a24936", fontWeight: "bold"}}>|</span> Neuroscience</motion.h1>
                 </div>
                 
 
@@ -134,7 +136,7 @@ function Hero() {
                     </motion.div>
                     <motion.div style={{x: paraThreeX, visibility: paraThreeVis}} className='flex justify-left items-center'>
                         <p className='text-backgroundGrey text-2xl font-dmSerif text-left'>
-                            When I'm not working, I play piano and compete on the UD club sailing team. 
+                            When I'm not working, I practice piano and guitar and compete on the UD club sailing team! 
                         </p>
                     </motion.div>
                 </div>
