@@ -26,7 +26,7 @@ function Navbar() {
             whileHover={{color: "#a24936"}} className='ml-[3vw] text-lg text-navbarDefaultColor'>RESUME</motion.a>
             <motion.a href="#frc" onClick={() => {lenis?.scrollTo("#frc", {offset:-100});}} whileHover={{color: "#a24936"}} className='ml-[3vw] text-lg text-navbarDefaultColor'>RESEARCH</motion.a>
             <motion.a href="#portTag" onClick={() => {lenis?.scrollTo("#portTag", {offset:-100});}} whileHover={{color: "#a24936"}} className='ml-[3vw] text-lg text-navbarDefaultColor'>PROJECTS</motion.a>
-            <motion.a href="" whileHover={{color: "#a24936"}} className='ml-[3vw] text-lg text-navbarDefaultColor'>CONTACT</motion.a>
+            <motion.a href="mailto:colemanwalsh27@gmail.com" whileHover={{color: "#a24936"}} className='ml-[3vw] text-lg text-navbarDefaultColor'>CONTACT</motion.a>
            </div>
         </motion.div>
         

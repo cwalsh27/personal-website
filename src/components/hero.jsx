@@ -51,7 +51,7 @@ function Hero() {
     const imageVis = useTransform(scrollYProgress, [0.35, 0.36], ["visible", "hidden"]);
 
     //Stage 2 Text Animations
-    const aboutTitleX = useTransform(scrollYProgress, [0.65, 0.75], ["-50vw", "0vw"]);
+    const aboutTitleX = useTransform(scrollYProgress, [0.65, 0.705], ["-50vw", "0vw"]);
     const aboutTitleVis = useTransform(scrollYProgress, [0.46, 0.47], ["hidden", "visible"]);
 
     const paraOneX = useTransform(scrollYProgress, [0.6, 0.7], ["-50vw", "0vw"]);
