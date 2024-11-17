@@ -9,6 +9,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 import Navbar from "./navbar"
 
+import headShot from '../imgs/blackt_smile_nobg.png'
+
+
 
 function Hero() {
 
@@ -81,7 +84,7 @@ function Hero() {
 
                 {/* Stage 1 Text + Images */}
                 <motion.div style={{y: imageY, visibility: imageVis}} className='col-start-7 col-end-13 row-start-2 row-end-13 mt-6 ml-12 -mr-8'>
-                    <img src="../imgs/blackt_smile_nobg.png" className='object-contain w-full h-full rounded-lg' alt="Coleman Walsh Headshot"></img>
+                    <img src={headShot} className='object-contain w-full h-full rounded-lg' alt="Coleman Walsh Headshot"></img>
                 </motion.div>
                 <motion.div style={{x: titleX, visibility: titleXVis}} className='row-start-3 row-end-5 w-[100vw] flex justify-left items-center'>
                     <h1 className='text-[9vw] text-backgroundGrey font-dmSerif ml-[10vw]'>Coleman Walsh</h1>

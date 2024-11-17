@@ -3,6 +3,8 @@ import React from 'react';
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useLenis } from 'lenis/dist/lenis-react';
 
+import signature from '../imgs/signature.png'
+
 function Navbar() {
 
     const lenis = useLenis();
@@ -16,7 +18,7 @@ function Navbar() {
         <motion.div style={{background: navBackground}} className='top-0 flex justify-between w-full h-[11vh] fixed z-50 drop-shadow-2xl'>
            <motion.div style={{marginLeft: signatureMargin}} className='w-1/6'>
             <a href="#home">
-                <img src="../imgs/signature.png" className='h-full w-full'/>
+                <img src={signature} className='h-full w-full'/>
             </a>
            </motion.div>
            <div className='flex justify-around items-center mr-[5vw] mt-[1vh]'>
