@@ -129,7 +129,7 @@ function Hero() {
                     <motion.div style={{x: paraOneX, visibility: paraOneVis}} className='flex justify-left items-center'>
                         <p className='text-backgroundGrey text-2xl font-dmSerif text-left'>
                             I am a student at the University of Delaware majoring in cognitive science (linguistics specialization) and computer science (AI concentration) and minoring in neuroscience. 
-                            These interests have fostered an interest in interdisciplinary research, which has led me to contribute to projects ranging from speech acquisition and vocal production to AI image segmentation. 
+                            These interests have fostered a love for interdisciplinary research, which has led me to contribute to various projects ranging from speech acquisition and vocal production to AI image segmentation. 
                         </p>
                     </motion.div>
                     <motion.div style={{x: paraTwoX, visibility: paraTwoVis}} className='flex justify-left items-center'>
