@@ -13,7 +13,7 @@ function App() {
       <ReactLenis root>
         <div id="home"></div>
         <Hero />
-        <RightResearchCard 
+        {/* <RightResearchCard 
         idFix="frc"
         title="Trustworthy AI Lab" 
         imgsrc="../imgs/fintech.png" 
@@ -26,7 +26,7 @@ function App() {
         <RightResearchCard title="Voice & Motor Lab" imgsrc="../imgs/banner.png"/>
         <LeftResearchCard title="SLAM Lab" imgsrc="../imgs/banner.png"/>
         <Portfolio idFix="portTag"></Portfolio>
-        <div className='h-[100vh] bg-background'></div>
+        <div className='h-[100vh] bg-background'></div> */}
       </ReactLenis>
       
       
